@@ -7,18 +7,20 @@
   needs to move — the hero grades, masks and crops whatever it is given.
 
   Drawn in the site's own palette so the placeholder reads as part of the design
-  rather than as a broken-image box.
+  rather than as a broken-image box. Repainted for the light theme: on paper the
+  figure has to be a tint DARKER than the ground, where on the dark build it was
+  a tint lighter. Same drawing, inverted relationship.
 -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900">
   <defs>
     <radialGradient id="ground" cx="52%" cy="40%" r="70%">
-      <stop offset="0%" stop-color="#1d2621"/>
-      <stop offset="60%" stop-color="#101312"/>
-      <stop offset="100%" stop-color="#060607"/>
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f7f3ec"/>
+      <stop offset="100%" stop-color="#efe8dc"/>
     </radialGradient>
     <linearGradient id="figure" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#d9c9a8" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#86c8a4" stop-opacity="0.18"/>
+      <stop offset="0%" stop-color="#8a7442" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#2f7f56" stop-opacity="0.14"/>
     </linearGradient>
   </defs>
 
@@ -31,12 +33,12 @@
   </g>
 
   <!-- Framing rules, echoing the site's hairline vocabulary. -->
-  <g stroke="#d9c9a8" stroke-opacity="0.16" fill="none">
+  <g stroke="#8a7442" stroke-opacity="0.22" fill="none">
     <circle cx="450" cy="440" r="300"/>
     <circle cx="450" cy="440" r="240"/>
   </g>
 
   <text x="450" y="830" text-anchor="middle"
         font-family="Georgia, 'Times New Roman', serif" font-size="30"
-        fill="#a49c92" fill-opacity="0.7" letter-spacing="6">PORTRAIT PENDING</text>
+        fill="#736c62" letter-spacing="6">PORTRAIT PENDING</text>
 </svg>
