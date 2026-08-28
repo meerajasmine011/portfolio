@@ -1,0 +1,42 @@
+<!--
+  Stand-in portrait. The real photograph (assets/img/meera-photo.jpg in the old
+  static site) was not present in the supplied folder, so this holds the frame.
+
+  To replace: drop the real photo at public/meera-photo.jpg and change
+  `profile.photo` in src/data/content.js to './meera-photo.jpg'. Nothing else
+  needs to move — the hero grades, masks and crops whatever it is given.
+
+  Drawn in the site's own palette so the placeholder reads as part of the design
+  rather than as a broken-image box.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900">
+  <defs>
+    <radialGradient id="ground" cx="52%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1d2621"/>
+      <stop offset="60%" stop-color="#101312"/>
+      <stop offset="100%" stop-color="#060607"/>
+    </radialGradient>
+    <linearGradient id="figure" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9c9a8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#86c8a4" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="900" fill="url(#ground)"/>
+
+  <!-- Shoulders and head: a suggestion of a portrait, not a cartoon of one. -->
+  <g fill="url(#figure)">
+    <circle cx="450" cy="360" r="132"/>
+    <path d="M450 520c-124 0-224 92-244 214a30 30 0 0 0 30 34h428a30 30 0 0 0 30-34c-20-122-120-214-244-214Z"/>
+  </g>
+
+  <!-- Framing rules, echoing the site's hairline vocabulary. -->
+  <g stroke="#d9c9a8" stroke-opacity="0.16" fill="none">
+    <circle cx="450" cy="440" r="300"/>
+    <circle cx="450" cy="440" r="240"/>
+  </g>
+
+  <text x="450" y="830" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif" font-size="30"
+        fill="#a49c92" fill-opacity="0.7" letter-spacing="6">PORTRAIT PENDING</text>
+</svg>
